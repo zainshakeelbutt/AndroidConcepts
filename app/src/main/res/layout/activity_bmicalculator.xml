@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    style="?android:attr/buttonBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+
+
+
+    <EditText
+        android:id="@+id/edtWeight"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_weight"
+        android:textColorHint="#707070"
+        android:ems="10"
+        android:inputType="number"
+        />
+    <EditText
+        android:id="@+id/edtHeightFt"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_height_ft"
+        android:textColorHint="#707070"
+        android:ems="10"
+        android:inputType="number"
+        />
+    <EditText
+        android:id="@+id/edtHeightIn"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_height_in"
+        android:textColorHint="#707070"
+        android:ems="10"
+        android:inputType="number"
+        />
+
+    <Button
+        android:id="@+id/calculateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#673AB7"
+        android:text="@string/calculate_bmi"
+        android:textAllCaps="false"
+        android:textColor="#FBFBFB" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:text="@string/result" />
+</LinearLayout>

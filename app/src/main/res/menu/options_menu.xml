@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/newFile"
+        android:icon="@android:drawable/stat_notify_chat"
+        android:title="@string/new_file"
+        app:showAsAction="ifRoom"
+        />
+    <item android:id="@+id/openFile"
+        android:icon="@android:drawable/btn_star"
+        android:title="@string/open_file"
+
+        />
+    <item android:id="@+id/saveFile"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="@string/save_file"
+        />
+</menu>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_dialog_shape"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    android:paddingBottom="11dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/add_contact"
+        android:textColor="@color/white"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:layout_margin="21dp"
+        />
+    <EditText
+        android:id="@+id/editName"
+        android:background="@color/white"
+        android:padding="11dp"
+        android:hint="@string/enter_name"
+        android:textColorHint="#9A9A9A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_marginBottom="11dp" />
+
+    <EditText
+        android:id="@+id/editNumber"
+        android:background="@color/white"
+        android:padding="11dp"
+        android:hint="@string/enter_number"
+        android:textColorHint="#9A9A9A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginBottom="11dp" />
+
+    <RelativeLayout
+        android:id="@+id/btnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:shadowRadius="0.5"
+            android:id="@+id/updateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update"
+            android:background="@color/white"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:shadowRadius="0.5"
+            android:id="@+id/addBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add"
+            android:background="@color/white"
+            android:layout_marginBottom="11dp"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

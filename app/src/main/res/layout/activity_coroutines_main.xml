@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".coroutines.CoroutinesMainActivity">
+
+    <TextView
+        android:id="@+id/counter"
+        android:textSize="28sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="0" />
+
+    <Button
+        android:onClick="addCounter"
+        android:layout_marginTop="20dp"
+        android:id="@+id/counterBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Counter" />
+
+    <Button
+        android:onClick="otherTask"
+        android:layout_marginTop="20dp"
+        android:id="@+id/otherTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Other Task" />
+
+    <Button
+        android:onClick="suspendingFun"
+        android:layout_marginTop="20dp"
+        android:id="@+id/suspendingFun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suspending Fun" />
+
+    <Button
+        android:onClick="printFbFollowers"
+        android:layout_marginTop="20dp"
+        android:id="@+id/fbFollowers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Print Fb Followers" />
+</LinearLayout>

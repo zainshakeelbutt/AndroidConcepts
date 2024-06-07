@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/drawerNotes"
+        android:icon="@android:drawable/btn_star"
+        android:title="Notes"
+        />
+    <item android:id="@+id/drawerCategories"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:title="Categories"
+        />
+    <item android:id="@+id/drawerLogout"
+        android:icon="@android:drawable/ic_dialog_alert"
+        android:title="Logout"
+        />
+
+</menu>

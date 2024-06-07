@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="liveDataViewModel"
+            type="com.o5appstudio.androidconcepts.androidarchitecture.livedata.LiveDataViewModel" />
+    </data>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".androidarchitecture.livedata.LiveDataMainActivity">
+
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:id="@+id/liveDataTv"
+            android:text="@{liveDataViewModel.factsLiveData}"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:onClick="@{()-> liveDataViewModel.updateLiveData()}"
+            android:layout_marginTop="20dp"
+            android:id="@+id/liveDataUpdateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"/>
+
+    </LinearLayout>
+</layout>
